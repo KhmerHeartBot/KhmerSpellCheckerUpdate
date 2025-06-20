@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ksac-telegram-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python ksac_report.py"
+    envVars:
+      - key: PORT
+        value: 10000
